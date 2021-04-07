@@ -1,5 +1,6 @@
 data
 traffic-signs-data
+image-norm-data.pickle
 .ipynb_checkpoints
 *.h5
 models
