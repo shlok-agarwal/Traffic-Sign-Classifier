@@ -58,14 +58,25 @@ My final model consisted of the following layers:
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
-| RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
+| Convolution 5x5, 6 layers     	| 1x1 stride, same padding, outputs 32x32x6 	|
+| RELU					|			Activation									|
+| Flatten output (f1)					|			Flatten the convolution output									|
+| Convolution 5x5, 16 layers     	| 1x1 stride, same padding, outputs 32x32x16 	|
+| Max pooling	      	| 2x2 stride,  outputs 16x16x6 				|
+| RELU					|			Activation									|
+| Flatten output (f2)					|			Flatten the convolution output									|
+| Add (f1) and (f2)					|			Add the flattened output from both convolution layers									|
+| Fully connected		| Output of space 400        									|
+| RELU					|			Activation									|
+| Dropout					|												|
+| Fully connected		| Output of space 240        									|
+| RELU					|			Activation									|
+| Dropout					|												|
+| Fully connected		| Output of space 84        									|
+| RELU					|			Activation									|
+| Fully connected		| Output of space 43        									|
+| Softmax				| Activation        									|
+
  
 
 
