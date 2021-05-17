@@ -123,7 +123,7 @@ When predicting images and gathering the label from the dataset( right), we can 
 | General caution      		| Road work   									| 1 |
 | No passing     			| No passing 										| 1 |
 | Speed limit 20 km/h					| Speed limit 30 km/h											| 0.92 |
-| Traffic light ahead (missing from training dataset) 	      		| Road Work					 				| 1 |
+| Traffic signal	      		| Road Work					 				| 1 |
 | Stop		| Stop      							| 1 |
 | Priority Road		| Priority Road      							| 1 |
 | Yield		| Yield      							| 1 |
