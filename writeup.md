@@ -107,11 +107,10 @@ To compensate for larger number of epochs, two dropout layers were added.
 ### Test a Model on New Images
 
 To test of new data, here are 8 German traffic signs that I found on the web:
-
-![alt text][image1] ![alt text][image2] ![alt text][image3] 
+    
+![alt text][image2] ![alt text][image3] 
 ![alt text][image4] ![alt text][image5] ![alt text][image6]
-![alt text][image7] ![alt text][image8] ![alt text][image9]
-![alt text][image10]
+![alt text][image7] ![alt text][image8]
 
 When predicting images and gathering the label from the dataset( right), we can see the model does a decent job in prediction. It got 4/8 correct and the others were close predictions.
 
@@ -133,8 +132,13 @@ When predicting images and gathering the label from the dataset( right), we can 
 The model was able to correctly guess 4 of the 8 traffic signs, which gives an accuracy of 50%. Two other images were predicted almost correctly. This indicates that the network could possibly benefit from more data and trying deeper neural networks.
 
 ### Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
 
 Looking at the feature map, the first convolution layer learns the shape of the traffic sign. You can see the border of the sign is recoginized in each of the six layers. Although the output of the second convolution layer is not clear, intuitively the second layer learns the finer details of the signs. I think about it in this way because when architecting the network, I found that adding a second layer improves the validation accuracy.
+      
+Conv layer 1:   
+![image](https://user-images.githubusercontent.com/22652444/118431628-c91dd780-b6a4-11eb-992a-2b461fa89842.png)
+    
+Conv layer 2:    
+![image](https://user-images.githubusercontent.com/22652444/118431660-db981100-b6a4-11eb-94e2-bcce25c39e10.png)
 
 
