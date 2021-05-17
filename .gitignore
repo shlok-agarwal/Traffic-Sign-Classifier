@@ -1,4 +1,5 @@
 data
+test_images
 traffic-signs-data
 image-norm-data.pickle
 .ipynb_checkpoints
