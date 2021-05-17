@@ -130,7 +130,9 @@ When predicting images and gathering the label from the dataset( right), we can 
 
 The model was able to correctly guess 4 of the 8 traffic signs, which gives an accuracy of 50%. Two other images were predicted almost correctly. This indicates that the network could possibly benefit from more data and trying deeper neural networks.
 
-### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-#### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
+### Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
+Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
+
+Looking at the feature map, the first convolution layer learns the shape of the traffic sign. You can see the border of the sign is recoginized in each of the six layers. Although the output of the second convolution layer is not clear, intuitively the second layer learns the finer details of the signs. I think about it in this way because when architecting the network, I found that adding a second layer improves the validation accuracy.
 
 
