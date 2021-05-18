@@ -112,6 +112,8 @@ To test of new data, here are 8 German traffic signs that I found on the web:
 ![alt text][image4] ![alt text][image5] ![alt text][image6]
 ![alt text][image7] ![alt text][image8]
 
+I found that the classification was affected by lower resolution and lower brightness test images. Since the high level features like the borders and colors are similar for many traffic signs, this makes it very challenging to classify correctly. For instance the sign for speed limit of 20 km/hr and 30 km/hr is almost similar except for the one digit change. 
+
 When predicting images and gathering the label from the dataset( right), we can see the model does a decent job in prediction. It got 4/8 correct and the others were close predictions.
 
 ![image](https://user-images.githubusercontent.com/22652444/118428331-39285f80-b69d-11eb-8a96-6746ee6131d9.png)
@@ -130,6 +132,8 @@ When predicting images and gathering the label from the dataset( right), we can 
 
 
 The model was able to correctly guess 4 of the 8 traffic signs, which gives an accuracy of 50%. Two other images were predicted almost correctly. This indicates that the network could possibly benefit from more data and trying deeper neural networks.
+
+
 
 ### Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 
