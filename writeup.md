@@ -112,7 +112,7 @@ To test of new data, here are 8 German traffic signs that I found on the web:
 ![alt text][image4] ![alt text][image5] ![alt text][image6]
 ![alt text][image7] ![alt text][image8]
 
-I found that the classification was affected by lower resolution and lower brightness test images. Since the high level features like the borders and colors are similar for many traffic signs, this makes it very challenging to classify correctly. For instance the sign for speed limit of 20 km/hr and 30 km/hr is almost similar except for the one digit change. 
+I found that the classification was affected by lower resolution and lower brightness test images. Since the high level features like the borders and colors are similar for many traffic signs, this makes it very challenging to classify correctly. For instance the sign for speed limit of 20 km/hr and 30 km/hr is almost similar except for the one digit change. To avoid this all the test images have good clarity.
 
 When predicting images and gathering the label from the dataset( right), we can see the model does a decent job in prediction. It got 4/8 correct and the others were close predictions.
 
@@ -130,10 +130,15 @@ When predicting images and gathering the label from the dataset( right), we can 
 | Yield		| Yield      							| 1 |
 | Turn right ahead		| Keep left      							| 0.99 | 
 
-
 The model was able to correctly guess 4 of the 8 traffic signs, which gives an accuracy of 50%. Two other images were predicted almost correctly. This indicates that the network could possibly benefit from more data and trying deeper neural networks.
 
+Analysis on wrong predictions:
+* General caution: The predicted sign is for road work. Looking at both signs, we can infer that a lot of features including the color and shape of both signs are similar. Finer features were not classified correctly.
+* Speed limit 20 km/h	: the sign for speed limit of 20 km/hr and 30 km/hr is almost similar except for the one digit change.
+* Traffic signal : The predicted sign is for road work. Looking at both signs, we can infer that a lot of features including the color and shape of both signs are similar. Finer features were not classified correctly.
+* Turn right ahead : The predicted sign is for Keep left. Looking at both signs, we can infer that a lot of features including the color and shape of both signs are similar. Finer features were not classified correctly.
 
+Having more data or a deeper neural network would help classifying the finer details correctly.
 
 ### Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 
